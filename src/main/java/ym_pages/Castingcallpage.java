@@ -6,13 +6,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import ym_BasePackage.Base;
 
 public class Castingcallpage extends Base {
- WebDriver driver;
- WebDriverWait wait;
+    WebDriver driver;
+    WebDriverWait wait;
 
- public Castingcallpage(WebDriver driver,WebDriverWait wait){
-   this.driver=driver;
-   this.wait = wait;
+    public Castingcallpage(WebDriver driver, WebDriverWait wait) {
+        this.driver = driver;
+        this.wait = wait;
+    }
 
- }
+    public void visibilityOfSearchBar() {
 
+    }
 }
