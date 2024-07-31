@@ -15,6 +15,8 @@ public class Castingcallpage extends Base {
     }
 
     public void visibilityOfSearchBar() {
-
+    }
+    public void castingcallfilters(){
+        
     }
 }
