@@ -15,7 +15,7 @@ public class Base {
 
         driver = WebDriverManager.chromedriver().create(); // Initializes the ChromeDriver
 
-        wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
 

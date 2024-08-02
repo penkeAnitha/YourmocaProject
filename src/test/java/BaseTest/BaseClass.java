@@ -21,13 +21,10 @@ public class BaseClass extends Base {
         driver.get("https://dev.yourmoca.com/mocalogin");
     }
 
-    public void navigateToCastingCalls() {
-        driver.get("https://staging.yourmoca.com/castingcalls");
-    }
 
     @AfterMethod
-    public void quitDriver() {
-
+    public void quitDriver() throws InterruptedException {
+  Thread.sleep(5000);
         driver.quit();
 
 
