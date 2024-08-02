@@ -9,7 +9,7 @@ import ym_pages.Login;
 
 public class FindWorkTests extends BaseClass {
 
-    @Test
+    @Test(priority = 2)
     public void Verifyfindworksearchbar(){
         Login login = new Login(getDriver(), getWait());
         login.loginWithEmail();
@@ -18,7 +18,7 @@ public class FindWorkTests extends BaseClass {
         Assert.assertTrue(findworkpage.findworksearchbar());
     }
 
-    @Test
+    @Test(priority = 1)
     public void Verifyselectedfindworkfilter(){
         Findworkpage findworkpage = new Findworkpage(getDriver(), getWait());
         findworkpage.navigatetofindworkpage();
@@ -26,7 +26,7 @@ public class FindWorkTests extends BaseClass {
         Assert.assertTrue(findworkpage.selectedfilterbudget());
 
     }
-    @Test
+    @Test(priority=3)
     public void Verifyremunarationprice(){
         Findworkpage findworkpage = new Findworkpage(getDriver(), getWait());
         findworkpage.navigatetofindworkpage();

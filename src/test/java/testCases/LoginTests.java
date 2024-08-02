@@ -16,16 +16,16 @@ public class LoginTests extends BaseClass {
 //        Assert.assertTrue(login.isDisplayed_MyProfile());
 //    }
 
-    @Test
+    @Test(priority=1)
     public void verifyLoginwithEmail() {
         login = new Login(getDriver(), getWait());
         login.loginWithEmail();
         Assert.assertTrue(login.isDisplayed_MyProfile());
     }
 
-    @Test
+    @Test(dependsOnMethods = {"verifyLoginwithEmail"})
     public void verifyLoginwithMobile() {
-
+        System.out.println("disabled test method");
     }
 
 

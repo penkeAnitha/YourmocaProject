@@ -59,6 +59,7 @@ public class Castingcallpage extends Base {
 
     public void navigateToCastingCalls() {
         driver.get("https://dev.yourmoca.com/castingcalls");
+        
 
     }
 

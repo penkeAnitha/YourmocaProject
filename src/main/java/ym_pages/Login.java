@@ -42,23 +42,22 @@ public class Login extends Base {
     }
 
 
-    public void loginWithMobile() {
+    public void loginWithMobile(){
 //        email_mobileField.sendKeys(mobile);
 //        passwordField.sendKeys(Password);
 //        loginBtn.click();
     }
 
-    public void getCurrentUrl() {
+    public void getCurrentUrl(){
         //  return driver.getCurrentUrl();
     }
 
-    public boolean isDisplayed_MyProfile() {
+    public boolean isDisplayed_MyProfile(){
         WebElement myProfile = wait.until(ExpectedConditions.visibilityOfElementLocated(myProfileLocator));
         return myProfile.isDisplayed();
     }
 
-
-    }
+}
 
 
 
