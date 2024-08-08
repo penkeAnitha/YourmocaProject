@@ -16,7 +16,7 @@ public class Login extends Base {
     WebDriver driver;
     WebDriverWait wait;
 
-    public Login(WebDriver driver, WebDriverWait wait) {
+    public Login(WebDriver driver, WebDriverWait wait){
         this.driver = driver;
         this.wait = wait;
     }
@@ -28,7 +28,7 @@ public class Login extends Base {
 
     // credentials
     String mobile = "9640572111";
-    String email = "anithapenke1432+filmequipment@gmail.com";
+    String email = "anithapenke1432+voiceover@gmail.com";
     String Password = "Krify@123";
 
     public void loginWithEmail() {
