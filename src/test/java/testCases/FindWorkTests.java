@@ -28,6 +28,7 @@ public class FindWorkTests extends BaseClass {
         Login login = new Login(getDriver(), getWait());
         login.loginWithEmail();
         login.isDisplayed_MyProfile();
+        login.loginWithEmail();
         Findworkpage findworkpage = new Findworkpage(getDriver(), getWait());
         findworkpage.navigatetofindworkpage();
         Assert.assertTrue(findworkpage.selectedfilterbudget());
