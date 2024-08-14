@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import ym_pages.Castingcallpage;
 import ym_pages.Login;
 
@@ -39,7 +40,8 @@ public class Castingcalltestcase extends BaseClass {
         castingcallpage.selectFilterDropdown();
         String ExpectedResult = castingcallpage.selctedfilterdata ;
         Assert.assertEquals(ExpectedResult,castingcallpage.FilterResult());
-
+        SoftAssert softAssert=new SoftAssert();
+        softAssert.assertAll();
 
     }
 

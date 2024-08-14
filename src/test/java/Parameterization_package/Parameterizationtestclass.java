@@ -1,10 +1,8 @@
 package Parameterization_package;
 
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import ym_pages.Login;
 
-public class Parameterizedtestclass1{
+public class Parameterizationtestclass {
     @Test
     public void parameterTest() {
         // Print or use the parameter in your test
@@ -29,4 +27,5 @@ public class Parameterizedtestclass1{
     public void test4(){
         System.out.println("test4");
     }
+
 }

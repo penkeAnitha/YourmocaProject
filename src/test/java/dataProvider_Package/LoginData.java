@@ -7,7 +7,7 @@ public class LoginData {
     @DataProvider(name = "login data")
     public Object[][] LoginData(){
         Object[][] data = {
-                {"username1", "password1"},
+                {"username1","password1"},
         };
         return data;
     }
