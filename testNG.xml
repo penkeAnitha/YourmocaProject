@@ -23,7 +23,7 @@
 <!--</classes>-->
 <!--</test>-->
 
-  <suite name="Chromebrowsersuite" parallel="tests" thread-count="2">
+  <suite name="Chromebrowsersuite" parallel="tests" thread-count="1">
     <test name="Chrometest">
     <parameter name ="browser" value="chrome"/>
 <classes>
@@ -31,9 +31,9 @@
 </classes>
     </test>
 <test name="Edgetesting">
- <parameter name="browser" value="Edge"/>
+ <parameter name="microsoft" value="Edge"/>
   <classes>
-  <class name="testCases.Crossbrowsertesting"/>
+  <class name="testCases.Microsoftedge"/>
   </classes>  
 </test>
 </suite>

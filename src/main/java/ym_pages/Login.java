@@ -28,7 +28,7 @@ public class Login extends Base {
 
     // credentials
     String mobile = "9640572111";
-    String email = "anithapenke1432+voiceover@gmail.com";
+    String email = "anithapenke1432+Actor@gmail.com";
     String Password = "Krify@123";
 
     public void loginWithEmail() {

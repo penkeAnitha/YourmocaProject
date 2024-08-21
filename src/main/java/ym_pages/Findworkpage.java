@@ -40,8 +40,8 @@ public class Findworkpage extends Base {
     }
 
     public void Dropdown() {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         WebElement Dropdownfilter = wait.until(ExpectedConditions.elementToBeClickable(ClickDropdown));
-        Dropdownfilter.click();
         List<WebElement> filterlists = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(findworkfilterslist));
         for (WebElement filters : filterlists) {
             String filtername = filters.getText();

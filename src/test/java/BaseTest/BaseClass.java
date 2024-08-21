@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import ym_BasePackage.Base;
 import ym_pages.Login;
@@ -17,21 +18,26 @@ import static java.sql.DriverManager.getDriver;
 
 public class BaseClass extends Base {
 //    WebDriver driver;
-   /* @BeforeMethod
+   @BeforeMethod
     public void driverSetUp() {
         setDriver();
-        driver = getDriver();
-        driver.get("https://dev.yourmoca.com/mocalogin");
+        WebDriver driver = getDriver();
+        driver.get("https://staging.yourmoca.com/mocalogin");
     }
 
-    */
+    @AfterMethod
+    public void quitDriver() throws InterruptedException {
+        Thread.sleep(5000);
+        getDriver().quit();
 
-
-    protected WebDriver driver;
-
-    @BeforeMethod
+    }
+    public WebDriver getDriver() {
+        return driver;
+    }
+    /*protected  WebDriver driver;
     @Parameters("browser")
-    public void setUp(String browser) {
+    @BeforeMethod
+    public void setUp(@Optional("chrome")String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\ANITHA\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
             driver = new ChromeDriver();
@@ -43,27 +49,19 @@ public class BaseClass extends Base {
 
     }
 
-
-   /* @AfterMethod
-    public void quitDriver() throws InterruptedException {
-        Thread.sleep(5000);
-        driver.quit();
-
-    }
-
-    */
-
-
     @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
     }
-
     public WebDriver getDriver() {
         return driver;
     }
+
+    */
+
+
 }
 
 
